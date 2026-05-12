@@ -18,19 +18,25 @@ Transforming a commercial Android device into a native Linux machine required by
 
 To transform the phone form factor into a truly modular workstation, the chassis underwent **three major design iterations** in FreeCAD towards different power profiles and accessory attachments:
 
-### Design 1: 
-- **Concept:** Designed with a thick, robust profile intended to house an oversized, high-capacity internal battery pack for extended fieldwork.
-- **Limitation:** The internal volume was too static, making the unit bulky when extra battery capacity wasn't required.
+### Design 1: Bulky Design
+- **Concept:** Designed with a thick box like structure, intended to house an oversized, high-capacity internal battery pack for extended fieldwork.
+- **Limitation:** The internal volume was too static, making the unit bulky when extra battery capacity wasn't required. Adding unnecessary weight and space inside.
 
-### Design 2: The Semi-Modular Shell (Magnetic Power Upgrade)
+![Version 1](Images/v1.png)
+
+### Design 2: The Semi-Modular Design
 - **Concept:** Integrated custom **magnetic Pogo-pin connectors** into the backplate to support hot-swappable external batteries.
 - **Features:** Included a hardwired internal ESP32 microcontroller inside the casing connected directly to the phone's internal USB line for wireless sniffing and peripheral control.
 
-### Design 3: The Ultimate Modular Platform (Fully Swappable Ecosystem)
-- **Concept:** The finalized design decoupled both the power system and the accessory bus to make the phablet infinitely upgradeable.
+![version 2](Images/v2.png)
+
+### Design 3: The Modular Design
+- **Concept:** The finalized design with both the power system and the accessory port via magnetic pogo pins to make the phablet infinitely upgradeable.
 - **Features:**
   - **Modular Power:** External battery units snap on instantly using high-retention magnetic Pogo pins.
-  - **Modular Peripherals:** The internal USB data lines terminate at an exposed magnetic Pogo interface. The ESP32 is now housed in its own hot-swappable cartridge, allowing the user to switch seamlessly between a microcontroller node, a sensor array, or other future custom attachments.
+  - **Modular Peripherals:** The internal USB data lines terminate at an exposed magnetic Pogo interface. The ESP32 is now in its own hot-swappable cartridge, allowing the user to switch between a microcontroller node, a sensor array, or other future custom attachments.
+
+![Version 3](Images/CAD.png)
 
 **The Limitations/Challenges**
 - The Power alone is the biggest challange, adding external battery needs to be very regulated for the Battery regulator board that is attached in the battery of the phone. 
@@ -42,3 +48,5 @@ To transform the phone form factor into a truly modular workstation, the chassis
 ## 📁 Repository Contents
 - `/CAD_Files` - Step-by-step FreeCAD assembly revisions showing all 3 design iterations.
 - `/Final_desgin` - CAD files/DXF files for the Final desgins.
+
+**Any comment on improvment and errors would be appreciated, feel free to look around.**
