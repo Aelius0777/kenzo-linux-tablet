@@ -42,6 +42,7 @@ To transform the phone form factor into a truly modular workstation, the chassis
 - The Power alone is the biggest challange, adding external battery needs to be very regulated for the Battery regulator board that is attached in the battery of the phone. 
 - In project i used 18650 Batteries for there minimal voltage rating and higher capacity though make sure that it doesnt not reverse charge when the phablet is pluged in because the battery regulator charges the battery at higher voltage than 18650 batteries are rathed for.
 - The Ubuntu Touch itself is not develoved completeled and is terminated. There are limited usages of this phablet due to software and hardware raw power. [For further details Click here](https://devices.ubuntu-touch.io/device/kenzo/release/xenial/).
+- The power is not sustained for long time or at heavy loads leading to sudden shutdown.
 
 ---
 
@@ -49,4 +50,4 @@ To transform the phone form factor into a truly modular workstation, the chassis
 - `/CAD_Files` - Step-by-step FreeCAD assembly revisions showing all 3 design iterations.
 - `/Final_desgin` - CAD files/DXF files for the Final desgins.
 
-**Any comment on improvment and errors would be appreciated, feel free to look around.**
+**Any comment on improvment and errors would be appreciated espically around power, feel free to look around.**
